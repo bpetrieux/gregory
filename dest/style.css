@@ -449,6 +449,9 @@ a:hover {
 .header .cta:hover {
   background-color: #604df0;
 }
+.menu-mobile-actif .header {
+  position: fixed;
+}
 @media only screen and (max-width: 768px) {
   .menu-mobile-actif .header_navigation {
     width: 100% !important;
@@ -1600,7 +1603,7 @@ input[type='email'], input[type='number'], input[type='password'], input[type='s
   -webkit-appearance: none;
   box-sizing: border-box;
 }
-input {
+input, select {
   line-height: normal;
   border-radius: 3px;
   border: 1px solid #aebdc1;
@@ -1609,6 +1612,12 @@ input {
   padding: 10px;
   transition: border-color 0.2s ease-in-out;
   width: 100%;
+  background-color: #fff;
+  height: 46px;
+}
+select {
+  width: auto;
+  width: initial;
 }
 button, input, optgroup, select, textarea {
   color: inherit;
