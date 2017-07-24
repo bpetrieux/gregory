@@ -1,0 +1,34 @@
+html, body {
+	width:100%; height:100%; margin:0; padding:0;
+	font-family:sans-serif; font-size:18px; line-height:1.15; font-weight:100;
+	color:white; background-color:#fff;
+	font-family: 'Montserrat-UltraLight';
+}
+a { text-decoration:none; color:white; }
+* { box-sizing:border-box; }
+
+/* Language Picker */
+#LanguagePickerContainer { position:absolute; right:0; top:0; width:67px; height:80px; overflow:hidden; z-index:200; }
+#LanguagePickerCircle { position:relative; left:0; top:-101px; width:142px; height:168px; background-color:#58595B; border-radius:92px; -webkit-border-radius:92px; -moz-border-radius: 92px; -webkit-background-clip:padding-box; background-clip:padding-box; }
+#LanguagePickerCircle:hover { background-color:#999999; }
+#LanguagePickerText { position:absolute; left:-35px; bottom:-13px; width:92px; height:82px; font-weight:bold; font-size:23px; line-height:60px; text-align:right; color:white; }
+
+/* Translations */
+.Translate>* { display:none; }
+.Lang_en .Translate .en { display:inline; }
+.Lang_fr .Translate .fr { display:inline; }
+
+/* Header */
+.Header { background-color:#604df0;display:block; padding:12px; }
+.MainLogo { background:url(logo_en.png) no-repeat; background-size:contain; height:62px;width:160px; }
+
+.Lang_fr .MainLogo { background-image:url(logo.png); }
+
+/* Other stuff */
+@media (min-width: 680px){
+	.MainLogo{
+		height:100px;
+		width:224px;
+	}
+
+}

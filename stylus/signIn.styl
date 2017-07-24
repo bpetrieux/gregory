@@ -1,0 +1,93 @@
+.signIn,.signUp
+	background-color $grey
+	padding 25px 0
+	box-shadow: 0px 3px 9px rgba(0,0,0,0.1) inset;
+	min-height 70vh
+	+above($medium)
+		padding 75px 0
+	+above($large)
+		padding 100px 0
+	.container
+		max-width 840px
+	&_logo
+		margin-bottom 40px
+		+above($medium)
+			lost-column: 1/3;
+	&_form
+		+above($medium)
+			lost-column 2/3
+.register
+	background-color white
+	padding 25px 0
+	box-shadow: 0px 3px 9px rgba(0,0,0,0.1) inset;
+	min-height 70vh
+	+above($medium)
+		padding 75px 0
+	+above($large)
+		padding 100px 0
+	.container
+		max-width 496px
+		+above($medium)
+			max-width 680px
+		+above($large)
+			max-width 1280px
+	&_plan
+		margin-bottom 80px
+		+above($large)
+			lost-column: 1/2;
+		&_content
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+			height 284px
+	&_form
+		+above($large)
+			lost-column: 1/2;
+	.circle
+		background-color $main
+		color white
+		margin 20px 0 40px 0
+	.form_col
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		/* margin-bottom: 20px; */
+		float: none;
+	.payment
+		margin-top 60px
+	.cvv
+		+above($medium)
+			width 30%
+			float right
+			margin: 0;
+	.card_number
+		+above($medium)
+			width 60%
+			float left
+			margin: 0;
+	.postal_code
+		+above($medium)
+			width: 40%;
+			float: right;
+	.exp_date
+		+above($medium)
+			float left
+	.plan_2,.plan_1
+		display none
+	.plan_actif
+		display flex!important
+	&_selector
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		margin 20px 0
+		a
+			padding 12px 24px
+			text-decoration none
+			border 1px solid $grey
+			color $grey
+		.link-actif
+			color $black
+			border 1px solid $black

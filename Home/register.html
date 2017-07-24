@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACADÉMIE GREGORY</title>
+	<link href="assets/styles/font.css" rel="stylesheet" />
+	<link href="../dest/style.css" rel="stylesheet" />
+	<link href="assets/images/greg_ico.png" rel="icon" type="image/png" />
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="assets/styles/YouTubePopUp.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/YouTubePopUp.jquery.js"></script>
+
+	<script type="text/javascript" src="../Scripts/Cookies.js"></script>
+	<script type="text/javascript" src="../Scripts/GetDocumentParam.js"></script>
+	<script type="text/javascript" src="../Scripts/Translate.js"></script>
+
+	<script type="text/javascript" src="Translations.En.js"></script>
+	<script type="text/javascript" src="Translations.Fr.js"></script>
+	<script type="text/javascript" src="../Scripts/Main.js"></script>
+	<script type="text/javascript" src="Home.js"></script>
+</head>
+<body class=TranslationSection data-SectionName="Index">
+	<header class="header">
+		<div class="container">
+			<a href="/" class="header_logo Translate Translated">
+				<img src="../SharedAssets/logo.png" alt="académie gregory logo" class="fr">
+				<img src="../SharedAssets/logo_en.png" alt="gregory's academy logo" class="en">
+			</a>
+
+			<ul class="header_navigation">
+				<li class="menu"><a href="/" class=Translate data-TranslationKey=Title_Home>Home</a>
+					<ul class="header_navigation-sub">
+						<li><a href="#advantages" class=Translate data-TranslationKey=Title_Advantages>Advantages</a></li>
+						<li><a href="#about" class=Translate data-TranslationKey=Title_About>About</a></li>
+						<li><a href="#fee" class=Translate data-TranslationKey=Title_Fee>Fee</a></li>
+					</ul>
+				</li>
+				<li class="menu" class="Translate Translated">
+					<span class=en><a href="faq.html" target="_blank">FAQ</a></span>
+				</li>
+				<li class="menu"><a href="sign_in.html" class="" data-TranslationKey="">Sign In</a></li>
+				<li class="menu"><a href="sign_up.html" class="" data-TranslationKey="">Create Account</a></li>
+				<li class="menu"><a href="#" class="LanguagePicker Translate" data-TranslationKey="LanguageName">Fr</a></li>
+				<li><a href="/#fee" class="cta active Translate" data-TranslationKey=Title_Register>Register</a></li>
+			</ul>
+			<div id="hamburger"><span></span><span></span><span></span><span></span></div>
+		</div>
+	</header>
+	<section class="hero_small"></section>
+	<section class="register">
+		<div class="container">
+			<div class="register_plan">
+				<h2>1. Your Plan</h2>
+				<div class="register_plan_content plan_1 plan_actif">
+					<div class="circle">
+						<h2 class="price Translate" data-TranslationKey=Fee1Price>SEE TRANSLATION FILE</h2>
+						<h6 class="Translate" data-TranslationKey=FeeDay>SEE TRANSLATION FILE</h6>
+					</div>
+					<h5 class="ribbon Translate" data-TranslationKey=Fee3>SEE TRANSLATION FILE</h5>
+					<p class="Translate" data-TranslationKey=Fee2>SEE TRANSLATION FILE</p>
+
+				</div>
+				<div class="register_plan_content plan_2">
+					<div class="circle">
+						<h2 class="price Translate" data-TranslationKey=Fee4Price>SEE TRANSLATION FILE</h2>
+						<h6 class="Translate" data-TranslationKey=FeeDay>SEE TRANSLATION FILE</h6>
+					</div>
+					<p class="Translate" data-TranslationKey=Fee5>SEE TRANSLATION FILE</p>
+				</div>
+				<div class="register_selector">
+					<a href="#" class="link-actif" data-plan="plan_1">2,95$ / day</a>
+					<a href="#" data-plan="plan_2">3,95 / day</a>
+				</div>
+			</div>
+
+			<div class="register_form">
+				<h2>2. Your Account</h2>
+				<p>Don't have a Académie Gregory account? <br><a href="sign_up.html">Create a free account</a></p>
+				<form action="">
+					<fieldset class="form-field">
+						<label class="form-label" for="user_login">Username</label>
+						<input class="form-input" autofocus="autofocus" type="text" name="user[login]" id="user_login">
+					</fieldset>
+					<fieldset class="form-field">
+						<label class="form-label" for="user_password">Password</label><input class="form-input mbxs" type="password" name="user[password]" id="user_password">
+						<a class="bdrn tsxs" href="/users/password/new">Forgot your password?</a></fieldset>
+						<fieldset class="submit">
+							<input type="submit" class="SubmitButton InputTranslate" value="Create an account" defaultlangfilled="true">
+						</fieldset>
+					</form>
+					<h2 class="payment">3. Payment</h2>
+					<h5>Credit Card Information</h5>
+					<form action="">
+						<fieldset class="form-field">
+							<p class="required">
+								<label class="form-label" for="cc_name">Name on card</label>
+								<input type="text" name="cc_name" id="cc_name" value="" placeholder="Your Name" tabindex="1" required="required" class="form-input">
+							</p>
+						</fieldset>
+						<div class="form_col">
+							<fieldset class="form-field card_number">
+								<p class="required">
+									<label class="form-label" for="cc_number">Card number</label>
+									<input type="text" name="cc_number" id="cc_number" value="" placeholder="0000 0000 0000 0000" tabindex="2" required="required" class="form-input">
+								</p>
+							</fieldset>
+							<fieldset class="form-field cvv">
+								<p class="required">
+									<label class="form-label" for="cc_cvc">Code (CVV)
+										<a data-toggle="modal" data-target="#cvv" href="#">?</a>
+									</label><input type="text" name="cc_cvc" id="cc_cvc" value="" label="Code (CVV)" tabindex="3" required="required" class="form-input is-invalid" data-original-title="" title="" aria-describedby="tooltip618960">
+								</p>
+							</fieldset>
+						</div>
+						<div class="form_col">
+							<fieldset class="form-field exp_date">
+								<p class="required">
+									<label class="form-label" for="cc_expiry">Expiration Date</label>
+								</p>
+								<select id="" name="">
+									<option value="1">1 - January</option>
+									<option value="2">2 - February</option>
+									<option value="3">3 - March</option>
+									<option value="4">4 - April</option>
+									<option value="5">5 - May</option>
+									<option value="6">6 - June</option>
+									<option value="7" selected="selected">7 - July</option>
+									<option value="8">8 - August</option>
+									<option value="9">9 - September</option>
+									<option value="10">10 - October</option>
+									<option value="11">11 - November</option>
+									<option value="12">12 - December</option>
+								</select>
+								<select id="cc_expiry__1i" name="cc_expiry[(1i)]">
+									<option value="2017" selected="selected">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+									<option value="2023">2023</option>
+									<option value="2024">2024</option>
+									<option value="2025">2025</option>
+									<option value="2026">2026</option>
+									<option value="2027">2027</option>
+									<option value="2028">2028</option>
+									<option value="2029">2029</option>
+									<option value="2030">2030</option>
+									<option value="2031">2031</option>
+									<option value="2032">2032</option>
+								</select>
+
+
+							</fieldset>
+							<fieldset class="form-field postal_code">
+								<p class="required">
+									<label class="form-label" for="cc_postal_code">Postal Code</label>
+									<input type="text" name="cc_postal_code" id="cc_postal_code" value="" tabindex="5" class="form-input" required="required">
+								</p>
+							</fieldset>
+						</div>
+						<fieldset class="submit">
+							<input type="submit" class="SubmitButton InputTranslate" value="Make a payment" defaultlangfilled="true">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<a href="/" class="footer_logo Translate Translated">
+				<img src="../SharedAssets/logo.png" alt="académie gregory logo" class="fr">
+				<img src="../SharedAssets/logo_en.png" alt="gregory's academy logo" class="en">
+			</a>
+			<div class="footer_social">
+				<a href="http://gregexperience.com" class="" target="_blank"><img src="assets/images/gregexp-logo.png" alt="greg experience logo"></a>
+				<div class="footer_social-links">
+					<a href="https://www.facebook.com/Gregexperience/" class="icon-facebook"></a>
+					<a href="https://twitter.com/Greg_Experience" class="icon-twitter"></a>
+					<a href="https://www.instagram.com/gregexperience/" class="icon-instagram"></a>
+					<a href="https://www.snapchat.com/add/suivezgreg" class="icon-snapchat"></a>
+					<a href="https://www.youtube.com/channel/UCFX0ftbiZ_Nvunek6n9uU7w" class="icon-youtube"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

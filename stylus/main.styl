@@ -1,0 +1,111 @@
+body
+	background-color #fff
+	//animation: fadeIn 1s forwards
+	margin 0
+	font-style: normal;
+	font-family: "Montserrat-light";  
+	font-size:18px;
+	line-height:24px
+	overflow-x hidden
+img
+	max-width 100%
+*
+	box-sizing:border-box;
+section,header,footer,article
+	lost-utility: clearfix;
+	position relative
+.container
+	max-width 1280px
+	margin 0 auto
+	padding-left 20px
+	padding-right 20px
+	+above($medium)
+		padding-left 60px
+		padding-right 60px
+.Translate>*
+	display:none;
+.Lang_en .Translate .en
+	display:inline;
+.Lang_fr .Translate .fr
+	display:inline;
+.hero_small
+	background-color $main
+	height 84px
+	+above($large)
+		height 128px
+.btn
+	cursor: pointer;
+	display: inline-block;
+	width: initial;
+	color white
+	background-color $black
+	border-radius 4px
+	padding: 12px 18px;
+	transition: background-color ease .5s;
+	text-decoration none
+	font-family: 'Montserrat-regular';
+	&:hover
+		background-color $main
+		color white
+	&-big
+		@extend .btn
+		padding: 24px 56px;
+		font-size: 20px;
+		text-transform: uppercase;
+.icon-circle
+	width:102px;
+	min-width 102px
+	height:99px;
+	border-radius: 102px;
+	background-color:$main;
+	font-size: 40px;
+	line-height: 100px;
+	text-align: center;
+	color: $contrast;
+	text-shadow: 5px 15px 20px rgba(0,0,0,0.3);
+	&-small
+		color: $contrast;
+		width:60px;
+		min-width 60px
+		height:60px;
+		border-radius: 60px;
+		background-color:$main;
+		font-size: 20px;
+		line-height: 60px;
+.icon-clock2
+	background-image:url(../Home/assets/images/icon-clock.png);
+	background-size:cover;
+.icon-video-camera
+	background-image:url(../Home/assets/images/icon-video.png);
+	background-size:cover;
+.icon-hat
+	background-image: url(../Home/assets/images/icon-hat.png);
+	background-size:cover;
+.icon-accessible
+	background-image: url(../Home/assets/images/icon-accessible.png);
+	background-size:cover;
+.icon-music
+	background-image:url(../Home/assets/images/icon-music.png);
+	background-size:cover;
+.video-player
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	iframe
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+.ribbon
+	background: url(../Home/assets/images/ribbon.png) no-repeat center;
+	background-size: contain;
+	font-family: 'Montserrat-Regular';
+	font-size: 11px;
+	letter-spacing: 2px;
+	line-height: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;

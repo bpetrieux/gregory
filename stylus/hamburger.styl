@@ -1,0 +1,71 @@
+
+#hamburger
+	top: 16px;
+	right: 20px;
+	width: 32px;
+	height: 22px;
+	position: absolute;
+	z-index: 210;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: -webkit-transition .5s ease-in-out;
+	-moz-transition: -moz-transition .5s ease-in-out;
+	-o-transition: -o-transition .5s ease-in-out;
+	transition: transition .5s ease-in-out;
+	cursor: pointer;
+	+above($large)
+		display none
+		position fixed
+		top: 60px;
+		right: 60px;
+	span
+		background: white;
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: -webkit-transition .25s ease-in-out;
+		-moz-transition: -moz-transition .25s ease-in-out;
+		-o-transition: -o-transition .25s ease-in-out;
+		transition: transition .25s ease-in-out;
+		&:nth-child(1)
+			top: 0px;
+		&:nth-child(2),
+		&:nth-child(3)
+			top: 8px;
+		&:nth-child(4)
+			top: 16px;
+.menu-mobile-actif 
+	#hamburger
+		position fixed
+		&:hover
+			span
+				background $main
+		span
+			background white
+			&:nth-child(1)
+				top: 8px;
+				width: 0%;
+				left: 50%;
+			&:nth-child(2)
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			&:nth-child(3)
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			&:nth-child(4)
+				top: 12px;
+				width: 0%;
+				left: 50%;

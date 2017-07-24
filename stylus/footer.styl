@@ -1,0 +1,31 @@
+.footer
+	background-color $black
+	padding 75px 0
+	color white
+	text-align center
+	+above($medium)
+		text-align left
+	+above($large)
+		padding 100px 0
+	.container
+		display flex
+		flex-direction column
+		width 100%
+		+above($medium)
+			flex-direction row
+			justify-content space-between
+			align-items center
+	&_logo
+		img
+			width 260px
+	&_social
+		&-links
+			margin-top 12px
+		a
+			font-size 32px
+			margin-right 12px
+	a
+		color white
+		text-decoration none
+		&:hover
+			color $main
