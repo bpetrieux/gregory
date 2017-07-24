@@ -20,7 +20,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('browser-sync',['stylus'], function() {
   browserSync({
-    proxy: "http://gregoryacademy.dev/",
+    proxy: "http://gregory.dev/",
       baseDir: "./",
     });
       gulp.watch("./stylus/*").on('change', reload);

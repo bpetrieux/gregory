@@ -1579,9 +1579,16 @@ sup {
   border: 1px solid #ebebeb;
   color: #ebebeb;
 }
+.register_selector img {
+  max-width: 12px;
+  display: none;
+}
 .register_selector .link-actif {
   color: #252525;
   border: 1px solid #252525;
+}
+.register_selector .link-actif img {
+  display: inline-block;
 }
 label {
   display: block;
